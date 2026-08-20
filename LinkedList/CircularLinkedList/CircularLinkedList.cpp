@@ -86,14 +86,12 @@ public:
             cout << "List is empty" << endl;
             return;
         }
-
         Node* curr = head;
-
-        do {
+        while (curr != tail){
             cout << curr->value << " ";
             curr = curr->next;
-        } while (curr != head);
-
+        }
+         cout << curr->value << " ";
         cout << endl;
     }
 };
